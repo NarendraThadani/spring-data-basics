@@ -1,0 +1,27 @@
+Info
+--------------------
+
+A Basic Example to demonstrate Spring-Data 
+
+Steps Summary
+1) Add Gradle Dependency
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    
+2) Design PoJo Class
+	Annotate with @Entity
+	and ID for Primary Keys
+	
+3) Design Custom Interface for adding custom methods apart from basic CRUD
+	i.e
+	interface customRepo ... extends CrudRepository<Customer, Long>
+		add methods for custom Queries
+	 
+4) To run using Spring Boot
+	define Application class with main and annotated with 
+	@SpringBootApplication
+	
+	and consume your CustomRepository 
+	with SpringData generating all the boilerPlate code for you.
+	
+
+ 
